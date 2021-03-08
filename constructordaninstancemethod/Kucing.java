@@ -9,8 +9,8 @@ package constructordaninstancemethod;
  *
  * @author ibrahimsyah
  */
-public class Kucing {
-    private String nama;
+public class Kucing { //PascalCase
+    private String nama; //camelCase
     private String warna;
     private String ras;
     private int tinggi;
