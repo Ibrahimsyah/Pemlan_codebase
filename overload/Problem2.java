@@ -19,12 +19,4 @@ public class Problem2 {
 //    4. Jika seluruh input sesuai dengan atribut, maka sesuaikan 
 //       sesuai input = atribut
 //    Lalu terdapat juga sebuah method cetakData() yang mengembalikan string dan berisi seluruh atribut yang ada
-    
-    public static void main(String[] args) {
-        Akun akun1 = new Akun();
-        System.out.println(akun1.cetakData());
-        
-        Akun akun2 = new Akun("Coco", 12);
-        System.out.println(akun2.cetakData());
-    }
 }
