@@ -14,4 +14,11 @@ public class Problem4 {
 //       berisi "Halo <nama>, kamu berumur <umur> tahun!"
 //    3. Jika dipanggil dengan 1 input namaBelakang (string), maka akan mengembalikan 
 //       String berisi "Halo <nama> <namaBelakang>!"
+    
+    public static void main(String[] args) {
+        Generator g1 = new Generator("Marco");
+        System.out.println(g1.generate());
+        System.out.println(g1.generate(20));
+        System.out.println(g1.generate("Budiman"));
+    }
 }

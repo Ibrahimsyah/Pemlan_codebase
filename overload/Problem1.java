@@ -17,4 +17,16 @@ public class Problem1 {
 //    3. Jika input merupakan array angka desimal dengan panjang 3, maka array[0] menjadi panjang, 
 //       array[1] menjadi lebar, dan array[2] menjadi tinggi
 //    Program tersebut diciptakan untuk dapat menghitung volume
+
+    public static void main(String[] args) {
+        BangunRuang b1 = new BangunRuang();
+        BangunRuang b2 = new BangunRuang(2);
+        BangunRuang b3 = new BangunRuang(2, 3);
+        double[] array = {1, 4, 5};
+        BangunRuang b4 = new BangunRuang(array);
+        System.out.println(b1.getVolume());
+        System.out.println(b2.getVolume());
+        System.out.println(b3.getVolume());
+        System.out.println(b4.getVolume());
+    }
 }

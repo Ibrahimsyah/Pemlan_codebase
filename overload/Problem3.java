@@ -1,5 +1,9 @@
 package overload;
 
+/**
+ *
+ * @author ibrahimsyah
+ */
 public class Problem3 {
 //    Sebuah program diciptakan untuk melakukan simulasi pengujian mobil. 
 //    Setiap mobil memiliki panjang, berat, dan kecepatan 
@@ -17,4 +21,12 @@ public class Problem3 {
 //    4. Jika input berupa jumlahBBM (double) dan beratTambahan (int), 
 //    maka akan mengembalikan nilai desimal 
 //    berupa (berat + beratTambahan)/jumlahBBM
+    
+    public static void main(String[] args) {
+        Mobil m1 = new Mobil(200, 2000, 100);
+        System.out.println(m1.ujiBalap(100));
+        System.out.println(m1.ujiBalap(20.5));
+        m1.ujiBalap(50, 10.2);
+        System.out.println(m1.ujiBalap(50.1, 20));
+    }
 }
