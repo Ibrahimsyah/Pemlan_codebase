@@ -12,7 +12,7 @@ public class Problem2 {
 //    input tiap akun bisa saja berubah ubah ketika proses pembuatan, 
 //    terdapat beberapa aturan:
 //    1. Jika tidak ada input, maka username = "", nama = "", umur = 0, gender = 'L'
-//    2. Jika tersedia input nama dan umur, maka nama = nama, umur = 0, 
+//    2. Jika tersedia input nama dan umur, maka nama = nama, umur = umur, 
 //       sisanya mengikuti aturan 1
 //    3. Jika tersedia umur, dan username, maka username = username, 
 //       umur = umur, sisanya mengikuti aturan 1
