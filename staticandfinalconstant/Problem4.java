@@ -40,7 +40,9 @@ public class Problem4 {
         Ponsel ponsel2 = new Ponsel(Ponsel.MERK_SUMSANG);
         Ponsel ponsel3 = new Ponsel(Ponsel.MERK_SYNO);
         Ponsel ponsel4 = new Ponsel(Ponsel.MERK_XAIOMI);
-        Ponsel[] daftarPonsel = {ponsel1, ponsel2, ponsel3, ponsel4};
+        Ponsel ponsel5 = new Ponsel(Ponsel.MERK_SYNO);
+        Ponsel ponsel6 = new Ponsel(Ponsel.MERK_SUMSANG);
+        Ponsel[] daftarPonsel = {ponsel1, ponsel2, ponsel3, ponsel4, ponsel5, ponsel6};
         
         System.out.println("Sebelum ke Agen");
         for(Ponsel ponsel : daftarPonsel){
@@ -48,7 +50,7 @@ public class Problem4 {
         }
         
         Ponsel[] ponselSiapJual = Agen.prosesPonsel(daftarPonsel);
-        System.out.println("Sebelum ke Agen");
+        System.out.println("\nSesudah ke Agen");
         for(Ponsel ponsel : ponselSiapJual){
             ponsel.cetakInfo();
         }
