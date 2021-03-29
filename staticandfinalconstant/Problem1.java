@@ -21,4 +21,12 @@ public class Problem1 {
 //        - Nomer identitas di generate oleh sistem, sehingga pemilik rumah adopsi tidak
 //        perlu memberikan secara manual
 //    Buatlah program untuk membantu rumah adopsi itu menentukan nomor identitas kucing
+
+    public static void main(String[] args) {
+        Kucing kitty = new Kucing(Kucing.RAS_PERSIA);
+        Kucing doggo = new Kucing(Kucing.RAS_CIHUAHUA);
+        Kucing.cetakInfoKucing(kitty);
+        Kucing.cetakInfoKucing(doggo);
+        System.out.println(Kucing.nomorIdentitasKucing);
+    }
 }

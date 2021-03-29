@@ -19,6 +19,14 @@ public class Problem2 {
 //	a. nim pertama bernilai 29032020101
 //	b. nim kedua bernilai 29032020105
 //	c. nim ketiga bernilai 29032020109
+//      d. dan seterusnyaaaaa
 //    Kampus tersebut dapat melakukan cetakDataMahasiswa dengan menginputkan mahasiswa, 
 //    dan akan mengeluarkan output berupa data diri mahasiswa tersebut.
+
+    public static void main(String[] args) {
+        Mahasiswa jimmy = new Mahasiswa("Jimmy", 15);
+        Mahasiswa budi = new Mahasiswa("Budi", 23);
+        Mahasiswa.cetakDataMahasiswa(jimmy);
+        Mahasiswa.cetakDataMahasiswa(budi);
+    }
 }

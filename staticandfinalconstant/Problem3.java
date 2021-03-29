@@ -17,8 +17,16 @@ public class Problem3 {
 //	- Jubah
 //	- Koko
 //    Setiap baju memiliki harga dan merk baju. Lalu toko tersebut dapat melakukan 
-//    suatu aktivitas buatBanyakBaju yang menghasilkan kumpulan baju dengan tipe 
+//    suatu aktivitas buatBanyakBaju yang menghasilkan kumpulan baju dengan merk 
 //    sama namun dengan harga yang berselisih 10000. buatBanyakBaju dapat dipanggil 
 //    tanpa harus membuat objek baju terlebih dahulu dan menerima inputan berupa
-//    hargaAwal dan tipebaju 
+//    hargaAwal, jumlahBaju, dan merkBaju
+    
+    public static void main(String[] args) {
+        Baju[] hasil = Baju.buatBanyakBaju(20000, 5, Baju.MERK_LEVIS);
+        for(Baju baju: hasil){
+            System.out.println(baju.getMerk());
+            System.out.println(baju.getHarga());
+        }
+    }
 }
