@@ -1,5 +1,4 @@
 package staticandfinalconstant;
-
 /**
  *
  * @author Ibrahimsyah
@@ -35,4 +34,23 @@ public class Problem4 {
 //
 //    Buatlah program yang sesuai dengan studi kasus di atas sehingga
 //    menghasilkan output sesuai gambar pada lampiran
+    
+    public static void main(String[] args) {
+        Ponsel ponsel1 = new Ponsel(Ponsel.MERK_NAKIO);
+        Ponsel ponsel2 = new Ponsel(Ponsel.MERK_SUMSANG);
+        Ponsel ponsel3 = new Ponsel(Ponsel.MERK_SYNO);
+        Ponsel ponsel4 = new Ponsel(Ponsel.MERK_XAIOMI);
+        Ponsel[] daftarPonsel = {ponsel1, ponsel2, ponsel3, ponsel4};
+        
+        System.out.println("Sebelum ke Agen");
+        for(Ponsel ponsel : daftarPonsel){
+            ponsel.cetakInfo();
+        }
+        
+        Ponsel[] ponselSiapJual = Agen.prosesPonsel(daftarPonsel);
+        System.out.println("Sebelum ke Agen");
+        for(Ponsel ponsel : ponselSiapJual){
+            ponsel.cetakInfo();
+        }
+    }
 }
