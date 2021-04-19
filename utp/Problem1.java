@@ -12,11 +12,11 @@ import java.util.Scanner;
  */
 class Pesawat {
 
-    private String nama;
-    private Manusia[] penumpang;
-    private int kapasitasMax;
+    private final String nama;
+    private final Manusia[] penumpang;
+    private final int kapasitasMax;
     private int jumlahPenumpang;
-    private long hargaTiket;
+    private final long hargaTiket;
 
     public Pesawat(String nama, int kapasitasMax, long hargaTiket) {
         this.nama = nama;
