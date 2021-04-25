@@ -24,14 +24,6 @@ public class Problem1 {
 //             - rapat() -> cetak "Manajer sedang rapat"
 
     public static void main(String[] args) {
-        Manusia manusia = new Manusia("Jack", 20, "Laki");
-        System.out.println(manusia);
-
-        Pekerja pekerja = new Pekerja("Jack", 20, "Laki", "12234", 20000);
-        pekerja.bekerja();
-        System.out.println(pekerja);
-
-        Manajer manajer = new Manajer( "IT", "Jimbo", 24, "Laki", "13", 1255);
-        System.out.println(manajer);
+        // Some magics
     }
 }
