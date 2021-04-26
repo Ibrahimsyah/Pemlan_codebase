@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package inheritance;
 
 /**
@@ -10,5 +5,22 @@ package inheritance;
  * @author ibrahimsyah
  */
 public class Main {
-    //Silent is Golden :)
+
+    public static void main(String[] args) {
+        Hewan hewan = new Hewan(10, 4);
+        System.out.println(hewan);
+
+        Kucing kucing = new Kucing("Jantan", 20, 2);
+        System.out.println(kucing);
+
+        Kelinci kelinci = new Kelinci("Betina", 2, 1);
+        hewan.bergerak();
+        hewan.makan();
+        kucing.bergerak();
+        kucing.lompat();
+        kucing.makan();
+        kelinci.bergerak();
+        kelinci.tidur();
+        kelinci.makan();
+    }
 }
