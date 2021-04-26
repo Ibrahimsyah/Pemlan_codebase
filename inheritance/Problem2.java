@@ -36,6 +36,7 @@ public class Problem2 {
         Sekretaris sekretaris = new Sekretaris(200, "2", "Annie", 2019, "Perempuan");
         sekretaris.bekerja();
         sekretaris.istirahat();
+        sekretaris.istirahat("Bakso mercon");
         System.out.println(sekretaris);
 
         Teknisi teknisi = new Teknisi(5,"3", "Her", 2001, "Perempuan");
