@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package inheritance;
 
 /**
@@ -10,26 +5,50 @@ package inheritance;
  * @author ibrahimsyah
  */
 public class Manusia {
+//    − nama : String
+//− jenisKelamin : boolean (true : laki-laki, false : perempuan)
+//− nik : String
+//− menikah : boolean
+//+ setter, getter
+//+ getTunjangan() : double
+//+ getPendapatan() : double
+//+ toString() : String
 
     private String nama;
-    private String kelamin;
-    private int umur;
+    private boolean jenisKelamin;
+    private String nik;
+    private boolean menikah;
 
-    public Manusia(String nama, String kelamin, int umur) {
+    public Manusia(String nama, boolean jenisKelamin, String nik, boolean menikah) {
         this.nama = nama;
-        this.kelamin = kelamin;
-        this.umur = umur;
+        this.jenisKelamin = jenisKelamin;
+        this.nik = nik;
+        this.menikah = menikah;
     }
 
-    public String getNama() {
-        return nama;
+    public double getTunjangan() {
+        //Tunjangan untuk yang telah menikah adalah apabila laki-laki akan mendapat $25
+        //sedangkan perempuan mendapat $20.
+        double tunjangan = 0;
+        if (menikah) {
+            if (jenisKelamin) {
+                tunjangan = 25;
+            } else {
+                tunjangan = 20;
+            }
+        } else {
+            tunjangan = 15;
+        }
+        return tunjangan;
     }
 
-    public void makan() {
-        System.out.println(this.nama + " sedang makan");
-    }
-
-    public void minum() {
-        System.out.println(this.nama + " sedang minum");
+    @Override
+    public String toString() {
+        String result = "";
+        result += "Nama: " + nama + "\n";
+        result += "Kelamin: " + (jenisKelamin ? "Laki laki" : "Perempuan") + "\n";
+        result += "NIK: " + nik + "\n";
+        result += "Tunjangan: " + getTunjangan() + "\n";
+        return result;
     }
 }

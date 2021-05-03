@@ -26,16 +26,16 @@ public class Problem1 {
     public static void main(String[] args) {
         // Some magics
         
-        Manusia manusia = new Manusia("Jimmy", "Laki laki", 19);
+        Manusiaa manusia = new Manusiaa("Jimmy", "Laki laki", 19);
         manusia.makan();
         manusia.minum();
         
-        Pekerja pekerja = new Pekerja("112233", 10000, "Jimbo", "Perempuan", 19);
+        Pekerjaa pekerja = new Pekerjaa("112233", 10000, "Jimbo", "Perempuan", 19);
         pekerja.makan();
         pekerja.minum();
         pekerja.bekerja();
         
-        Manajer manajer = new Manajer("IT", "111133", 199999, "Smitty", "Laki laki", 19);
+        Manajerr manajer = new Manajerr("IT", "111133", 199999, "Smitty", "Laki laki", 19);
         manajer.makan();
         manajer.minum();
         manajer.bekerja();
