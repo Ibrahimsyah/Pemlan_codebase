@@ -5,34 +5,33 @@
  */
 package inheritance;
 
+import java.time.LocalDate;
+
 /**
  *
  * @author ibrahimsyah
  */
-public class Manajer extends Pekerja {
+public class Manajer extends Pekerja{
+//    − departemen : String
+//    + setter, getter
+    private String departmen;
 
-    private String department;
-
-    public Manajer(String department,
-            String NIP,
-            int gaji,
-            String nama,
-            String kelamin,
-            int umur) {
-        super(NIP, gaji, nama, kelamin, umur);
-        this.department = department;
-    }
-
-    public void rapat() {
-        System.out.println("Manajer sedang rapat");
+    public Manajer(String departmen, double gaji, LocalDate tahunMasuk, int jumlahAnak, String nama, boolean jenisKelamin, String nik, boolean menikah) {
+        super(gaji, tahunMasuk, jumlahAnak, nama, jenisKelamin, nik, menikah);
+        this.departmen = departmen;
     }
 
     @Override
-    public void makan() {
-        System.out.println("Manajer sedang makan");
+    public double getTunjangan() {
+        double result = super.getTunjangan();
+        result += 10.0/100 * super.getGaji();
+        return result;
     }
 
-    public void test() {
-        super.makan();
+        @Override
+    public String toString() {
+        String result = super.toString();
+        result += "Departemen: " + departmen + "\n";
+        return result;
     }
 }
