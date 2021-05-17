@@ -46,5 +46,11 @@ public class Main {
         ig2.bernafas();
         ig2.makan();
         ig2.tidur();
+        
+        PetHouse.treatMakhlukHidup(kucing);
+        PetHouse.treatMakhlukHidup(ig1);
+        
+        
+        
     }
 }
