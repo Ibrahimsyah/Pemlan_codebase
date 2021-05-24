@@ -109,7 +109,7 @@ public class PolymorphismProblem {
             System.out.println(kue);
             if (kue instanceof KuePesanan) {
                 //Kue kue yang merupakan Kue Pesanan
-                KuePesanan kuePesanan = (KuePesanan) kue;
+                KuePesanan kuePesanan = (KuePesanan) kue; //Contoh polymorphism
                 totalHargaPesanan += kuePesanan.hitungHarga();
                 totalBeratPesanan += kuePesanan.getBerat();
             } else {
