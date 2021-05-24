@@ -4,6 +4,10 @@ package drillinguap;
  *
  * @author Ibrahimsyah
  */
+
+
+//Sebagai class dasar atau Base Case, bertujuan untuk di spesifikan melalui 
+//Specialization (Penurunan) dengan menambahkan spesifikasi khusus
 abstract class Kue {
 
     private final String nama;

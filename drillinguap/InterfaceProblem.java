@@ -4,6 +4,9 @@ package drillinguap;
  *
  * @author Ibrahimsyah
  */
+
+//Berfungsi sebagai kontrak/aturan yang harus dipenuhi
+//Bertujuan untuk di implementasikan
 interface Payable {
     double getPayableAmount();
 }
